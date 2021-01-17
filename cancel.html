@@ -1,0 +1,38 @@
+<html>
+<head>
+  <link rel ="stylesheet" href="style.css">
+  <style>
+  .cancelbutton{
+        position:absolute;
+        top:-20px;
+        right:0;
+  }
+  </style>
+</head>
+<body onload="loading()">
+   <div id="container" class="blur">
+   <div class="text">
+     <p>Maintenance of buildings involves cleaning common areas, periodically removing garbage and fixing damaged objects. It can include inspection, repair and maintenance of electrical systems, heating and air conditioning systems, as well as other utilities.</p>
+     <a onclick="loading()">Read more</a>
+     </div>
+     <img src="https://wallpapercave.com/wp/wp2752752.jpg">
+   </div>
+   <div id="popup">
+   <p>
+   this is City Manipulation Editing Background HD building background manipulation background editing background
+   </p>
+   <a onclick="loading()">Close</a>
+   <a class="cancelbutton" onclick="loading()">X</a>
+   </div>
+   
+   <script>
+   function loading(){
+       var blur = document.getElementById("container");
+       blur.classList.toggle("active");
+        var popup = document.getElementById("popup");
+        popup.classList.toggle("popupactive");
+   }
+   </script>
+</body>
+
+</html>
